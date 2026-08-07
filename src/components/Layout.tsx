@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, Link, Outlet, useLocation } from 'react-router-dom';
-import { TextHoverEffect } from '../components/ui/text-hover-effect';
 
 const Layout: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
