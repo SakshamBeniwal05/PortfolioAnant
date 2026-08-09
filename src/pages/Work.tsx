@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     year: '2023',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
-    tags: ['Live Event', 'Stage Lighting', 'Commercial'],
+    tags: ['Live Event', 'Commercial'],
   },
   {
     id: '2',
@@ -154,22 +154,6 @@ const Work: React.FC = () => {
             </div>
           </Link>
         ))}
-      </div>
-
-      {/* Load More CTA */}
-      <div className="w-full flex justify-center mt-portfolio-section-gap border border-portfolio-soft-graphite py-16 relative bg-portfolio-surface-container-lowest">
-        <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-        <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-        <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-        <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-        <Link
-          to="/work"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-          className="magnetic-btn font-portfolio-nav-link text-portfolio-nav-link uppercase text-portfolio-primary border border-portfolio-soft-graphite px-8 py-4 hover:bg-portfolio-primary hover:text-portfolio-background transition-colors tracking-widest inline-flex items-center gap-2"
-        >
-          Load More Works
-        </Link>
       </div>
     </div>
   );
