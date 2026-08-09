@@ -118,10 +118,10 @@ const ProjectDetails: React.FC = () => {
         {/* Page Header */}
         <div className="w-full mb-portfolio-section-gap mt-portfolio-stack-lg border border-portfolio-soft-graphite p-8 relative bg-portfolio-surface-container-lowest flex flex-col md:flex-row justify-between items-start md:items-end gap-6 md:gap-0">
           {/* Intersection markers */}
-          <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
           <div>
             <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver block mb-2 uppercase tracking-widest">
@@ -153,10 +153,10 @@ const ProjectDetails: React.FC = () => {
                 className={`${config.span} border border-portfolio-soft-graphite p-4 relative bg-portfolio-surface-container-lowest overflow-hidden group cursor-zoom-in`}
               >
                 {/* Corner Markers */}
-                <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-                <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-                <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-                <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+                <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+                <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+                <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+                <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
                 <div className={`w-full h-full overflow-hidden ${config.aspect}`}>
                   <img
@@ -180,10 +180,10 @@ const ProjectDetails: React.FC = () => {
           className={`relative border border-portfolio-soft-graphite p-6 bg-portfolio-surface-container-lowest max-w-[90vw] max-h-[85vh] shadow-2xl transition-all duration-300 ease-in-out ${selectedImage ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4'}`}
         >
           {/* Corner Markers */}
-          <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+          <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           
           <img
             src={selectedImage || ''}

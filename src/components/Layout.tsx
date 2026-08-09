@@ -168,10 +168,10 @@ const Layout: React.FC = () => {
       {/* Shared Footer */}
       <footer className="relative bg-portfolio-deep-obsidian flex flex-col items-start px-portfolio-margin-page w-full space-y-portfolio-stack-lg pt-20 pb-0 bg-portfolio-surface-container-lowest border-t border-portfolio-soft-graphite transition-all duration-500 ease-in-out overflow-hidden">
         {/* Footer Grid Intersections (+ Cross-hairs) */}
-        <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] font-portfolio-label-mono text-[14px] text-portfolio-muted-silver z-50 pointer-events-none select-none leading-none">
+        <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center font-portfolio-label-mono text-[14px] text-portfolio-muted-silver z-50 pointer-events-none select-none leading-none">
           +
         </div>
-        <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] font-portfolio-label-mono text-[14px] text-portfolio-muted-silver z-50 pointer-events-none select-none leading-none">
+        <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center font-portfolio-label-mono text-[14px] text-portfolio-muted-silver z-50 pointer-events-none select-none leading-none">
           +
         </div>
 
