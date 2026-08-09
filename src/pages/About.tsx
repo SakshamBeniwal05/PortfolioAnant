@@ -232,18 +232,24 @@ const About: React.FC = () => {
       </section>
 
       {/* Core Proficiencies Tag List */}
-      <section className="px-portfolio-margin-page border-t border-portfolio-soft-graphite pt-24">
-        <div className="flex flex-col md:flex-row justify-between items-start border border-portfolio-soft-graphite p-8 relative bg-portfolio-surface-container-lowest">
+      <section className="px-portfolio-margin-page border-t border-portfolio-soft-graphite pt-16">
+        <div className="mb-portfolio-stack-lg flex flex-col md:flex-row justify-between items-start md:items-end gap-4">
+          <h2 className="font-portfolio-headline-lg text-[32px] md:text-portfolio-headline-lg text-portfolio-primary tracking-tight leading-none">
+            Core<br />Proficiencies.
+          </h2>
+          <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest mb-2">
+            Skill &amp; Software Matrix
+          </span>
+        </div>
+
+        <div className="border border-portfolio-soft-graphite p-8 relative bg-portfolio-surface-container-lowest">
           {/* Corner crosses */}
           <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           <div className="absolute top-0 right-0 translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
-          <h2 className="font-portfolio-headline-md text-[24px] md:text-portfolio-headline-md text-portfolio-primary mb-6 md:mb-0 w-full md:w-1/3">
-            Core Proficiencies
-          </h2>
-          <div className="w-full md:w-2/3 flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4">
             {[
               'DSLR & Mirrorless',
               'Portrait & Event',

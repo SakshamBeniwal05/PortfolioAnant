@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-interface Project {
+export interface Project {
   id: string;
   title: string;
   category: 'Portraits' | 'Commercial' | 'Events';
@@ -10,38 +10,42 @@ interface Project {
   year: string;
   layoutClass: string;
   aspectClass: string;
+  tags: string[];
 }
 
-const projectsData: Project[] = [
+export const projectsData: Project[] = [
   {
     id: '1',
-    title: 'Nocturne',
+    title: 'Concert',
     category: 'Commercial',
-    subtext: '01 — Commercial / Architecture',
-    image: '/images/Data/stage2.jpeg',
+    subtext: '01 — Boisterous',
+    image: '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (11).jpeg',
     year: '2023',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
+    tags: ['Live Event', 'Stage Lighting', 'Commercial'],
   },
   {
     id: '2',
-    title: 'Silence',
-    category: 'Portraits',
-    subtext: '02 — Portraits / Studio',
-    image: '/images/Data/hanumankindcolor.png',
+    title: 'Weeding',
+    category: 'Events',
+    subtext: '02 — Love Unscripted',
+    image: '/images/Weeding/_GEN2053.JPG',
     year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
+    tags: ['Portrait', 'Studio'],
   },
   {
     id: '3',
-    title: 'Visions',
+    title: 'Lanscapes',
     category: 'Portraits',
-    subtext: '03 — Portraits / Editorial',
+    subtext: '03 — Nature and Horizons',
     image: '/images/Data/anuvjain_color.jpg',
     year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
+    tags: ['Editorial', 'Commercial'],
   },
   {
     id: '4',
@@ -52,6 +56,7 @@ const projectsData: Project[] = [
     year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
+    tags: ['Events', 'Studio'],
   },
 ];
 
@@ -116,9 +121,10 @@ const Work: React.FC = () => {
       {/* Gallery Grid (Asymmetrical) */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-y-portfolio-section-gap gap-x-portfolio-gutter">
         {filteredProjects.map((project) => (
-          <article
+          <Link
             key={project.id}
-            className={`${project.layoutClass} group cursor-pointer border border-portfolio-soft-graphite p-6 relative bg-portfolio-surface-container-lowest card-sfx`}
+            to={`/project/${project.id}`}
+            className={`${project.layoutClass} group cursor-pointer border border-portfolio-soft-graphite p-6 relative bg-portfolio-surface-container-lowest card-sfx block`}
           >
             {/* Corner Markers */}
             <div className="absolute top-0 left-0 -translate-x-[50%] -translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
@@ -126,14 +132,14 @@ const Work: React.FC = () => {
             <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
             <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
-            <div className={`parallax-wrap w-full bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite ${project.aspectClass}`}>
+            <div className={`parallax-wrap w-full bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite overflow-hidden ${project.aspectClass}`}>
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-full object-cover parallax-img grayscale group-hover:grayscale-0 transition-all duration-700 ease-out transform group-hover:scale-105"
+                className="w-full h-full object-cover parallax-img transition-all duration-700 ease-in-out transform group-hover:scale-105"
               />
             </div>
-            <div className="flex flex-col md:flex-row justify-between items-start pt-2 gap-2 border-t border-portfolio-soft-graphite pt-4 mt-2">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-2 border-t border-portfolio-soft-graphite pt-4 mt-2">
               <div>
                 <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver block mb-1 uppercase tracking-wider">
                   {project.subtext}
@@ -146,7 +152,7 @@ const Work: React.FC = () => {
                 {project.year}
               </span>
             </div>
-          </article>
+          </Link>
         ))}
       </div>
 

@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Work from './pages/Work';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import ProjectDetails from './pages/ProjectDetails';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="work" element={<Work />} />
+          <Route path="project/:id" element={<ProjectDetails />} />
           <Route path="about" element={<About />} />
           <Route path="contact" element={<Contact />} />
           {/* Catch-all fallback redirecting to Home */}

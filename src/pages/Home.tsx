@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { projectsData } from './Work';
 
 const Home: React.FC = () => {
   const handleMouseMove = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -14,39 +15,8 @@ const Home: React.FC = () => {
     e.currentTarget.style.transform = 'translate(0px, 0px)';
   };
 
-  const projects = [
-    {
-      id: '1',
-      title: 'Nocturne',
-      year: '2023',
-      image: '/images/Data/stage2.jpeg',
-      tags: ['Architecture', 'Editorial'],
-    },
-    {
-      id: '2',
-      title: 'Silence',
-      year: '2024',
-      image: '/images/Data/hanumankindcolor.png',
-      tags: ['Portrait', 'Studio'],
-    },
-    {
-      id: '3',
-      title: 'Visions',
-      year: '2024',
-      image: '/images/Data/anuvjain_color.jpg',
-      tags: ['Editorial', 'Commercial'],
-    },
-    {
-      id: '4',
-      title: 'Performers',
-      year: '2024',
-      image: '/images/Data/perforer.jpeg',
-      tags: ['Events', 'Studio'],
-    },
-  ];
-
   // Duplicate the list once to allow a seamless infinite scroll
-  const duplicatedProjects = [...projects, ...projects];
+  const duplicatedProjects = [...projectsData, ...projectsData];
 
   return (
     <div className="w-full">
@@ -55,19 +25,19 @@ const Home: React.FC = () => {
         {/* Background Image Container */}
         <div className="absolute inset-0 z-0 bg-portfolio-deep-obsidian">
           <div
-            className="w-full h-full bg-cover bg-center opacity-70  transition-all duration-1000 ease-in-out transform scale-100 hover:scale-105"
+            className="w-full h-full bg-cover bg-center opacity-70 transition-all duration-1000 ease-in-out transform scale-100 hover:scale-105"
             style={{ backgroundImage: "url('/images/Profile/profile.png')" }}
           />
         </div>
         
         {/* Subheaders */}
-        <div className="z-10 w-full flex justify-between items-end border-b border-portfolio-soft-graphite pb-4 mb-portfolio-stack-md relative">
+        <div className="z-10 w-full hidden md:flex md:flex-row md:justify-between items-center md:items-end gap-2 md:gap-0 border-b border-portfolio-soft-graphite pb-4 mb-portfolio-stack-md relative">
           <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] select-none font-portfolio-label-mono">+</div>
           <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] select-none font-portfolio-label-mono">+</div>
-          <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest">
+          <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest text-center md:text-left">
             Photographer
           </p>
-          <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest">
+          <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest text-center md:text-right">
             Visual Storyteller
           </p>
         </div>
@@ -81,14 +51,14 @@ const Home: React.FC = () => {
       {/* Work Section (Horizontal Scrolling Marquee) */}
       <section className="pt-[10rem] pb-12 w-full relative overflow-hidden">
         {/* Section Header */}
-        <div className="mx-portfolio-margin-page mb-portfolio-stack-lg flex justify-between items-end border-b border-portfolio-soft-graphite pb-4 relative">
+        <div className="mx-portfolio-margin-page mb-portfolio-stack-lg flex flex-col sm:flex-row justify-between items-center sm:items-end gap-2 sm:gap-0 border-b border-portfolio-soft-graphite pb-4 relative">
           <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] select-none font-portfolio-label-mono">+</div>
           <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] select-none font-portfolio-label-mono">+</div>
           
-          <h2 className="font-portfolio-headline-lg text-[32px] md:text-portfolio-headline-lg text-portfolio-primary tracking-tight">
+          <h2 className="font-portfolio-headline-lg text-[32px] md:text-portfolio-headline-lg text-portfolio-primary tracking-tight text-center sm:text-left">
             Recent Work
           </h2>
-          <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest mb-2">
+          <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase tracking-widest text-center sm:text-right mb-0 sm:mb-2">
             Selected Archives
           </span>
         </div>
@@ -112,18 +82,18 @@ const Home: React.FC = () => {
                 <div className="absolute bottom-0 left-0 -translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
                 <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
-                <Link to="/work" className="card-sfx">
+                <Link to={`/project/${project.id}`} className="card-sfx group">
                   <div className="flex justify-between items-center mb-portfolio-stack-sm">
                     <h3 className="font-portfolio-headline-md text-[20px] md:text-[24px] text-portfolio-primary hover:opacity-80 transition-opacity">
                       {project.title}
                     </h3>
                     <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver">{project.year}</span>
                   </div>
-                  <div className="parallax-wrap w-full aspect-[4/3] bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite">
+                  <div className="parallax-wrap w-full aspect-[4/3] bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
-                      className="w-full h-full object-cover parallax-img grayscale hover:grayscale-0 transition-all duration-700"
+                      className="w-full h-full object-cover parallax-img transition-all duration-700 ease-in-out transform group-hover:scale-105"
                     />
                   </div>
                   <div className="flex gap-2">
