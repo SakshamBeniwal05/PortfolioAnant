@@ -43,9 +43,10 @@ const projectImages: Record<string, string[]> = {
     '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (4).jpeg',
     '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (3).jpeg',
     '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (5).jpeg',
-    '/images/Weeding/IMG_1225.JPG',
-    '/images/Weeding/IMG_1231.JPG',
-    '/images/Weeding/_GEN2053.JPG',
+    '/images/Concert/anuvjain.jpeg',
+    '/images/Concert/hanumankindcolor.png',
+    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
+    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (12).jpeg'
   ],
 };
 
@@ -101,7 +102,7 @@ const ProjectDetails: React.FC = () => {
 
   return (
     <div className="w-full max-w-[1920px] mx-auto px-portfolio-margin-page pt-32 md:pt-40 pb-portfolio-section-gap relative">
-      
+
       {/* Symmetrical Back button and main page content container which dims */}
       <div className={`transition-all duration-300 ${selectedImage ? 'opacity-40 pointer-events-none' : 'opacity-100'}`}>
         {/* Floating Symmetrical Back Button */}
@@ -176,7 +177,7 @@ const ProjectDetails: React.FC = () => {
         onClick={() => setSelectedImage(null)}
         className={`fixed inset-0 z-[100] bg-portfolio-background/60 backdrop-blur-sm flex items-center justify-center cursor-zoom-out select-none p-4 transition-all duration-300 ease-in-out ${selectedImage ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
       >
-        <div 
+        <div
           className={`relative border border-portfolio-soft-graphite p-6 bg-portfolio-surface-container-lowest max-w-[90vw] max-h-[85vh] shadow-2xl transition-all duration-300 ease-in-out ${selectedImage ? 'scale-100 opacity-100 translate-y-0' : 'scale-95 opacity-0 translate-y-4'}`}
         >
           {/* Corner Markers */}
@@ -184,7 +185,7 @@ const ProjectDetails: React.FC = () => {
           <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
           <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-          
+
           <img
             src={selectedImage || ''}
             alt="Expanded view"

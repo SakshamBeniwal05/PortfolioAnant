@@ -52,7 +52,8 @@ export const projectsData: Project[] = [
     title: 'Performers',
     category: 'Events',
     subtext: '04 — Events / Studio',
-    image: '/images/Data/perforer.jpeg',
+    image:
+      '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
     year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
