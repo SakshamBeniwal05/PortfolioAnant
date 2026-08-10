@@ -34,7 +34,7 @@ const About: React.FC = () => {
               </h1>
               <div className="font-portfolio-body-lg text-portfolio-body-lg text-portfolio-muted-silver space-y-4 max-w-prose">
                 <p>
-                  Creative and detail-oriented Photographer with over 3.5 years of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
+                  Creative and detail-oriented Photographer with over a year of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
                 </p>
                 <p>
                   Skilled in camera handling, lighting techniques, and photo editing software. Passionate about storytelling through visuals and committed to delivering exceptional results that meet client expectations.
@@ -114,22 +114,22 @@ const About: React.FC = () => {
                 Experience
               </span>
               <h3 className="font-portfolio-headline-md text-[24px] md:text-portfolio-headline-md text-portfolio-primary mb-2">
-                Digital World STUDIO
+                Pydome Media
               </h3>
               <p className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver">
-                Professional Photographer &amp; Photo Editor
+                Freelance Photographer
               </p>
               <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-surface-tint mt-2">
-                2022 - PRESENT
+                MARCH 2025 - Present
               </p>
               
               <div className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver mt-6 space-y-4 leading-relaxed border-t border-portfolio-soft-graphite pt-6">
                 <p className="font-bold text-portfolio-primary uppercase text-[14px] tracking-wider mb-2">Key Competencies:</p>
                 <ul className="list-disc pl-5 space-y-2">
-                  <li>Professional photoshoots, lighting configurations, and asymmetry layouts.</li>
-                  <li>Composition and visual storytelling across portraits, commercial, and events.</li>
-                  <li>Advanced photo editing and retouching in Adobe Photoshop and Lightroom.</li>
-                  <li>Full equipment and gear lifecycle management.</li>
+                  <li>Client photography assignments, product shoots, and brand campaigns.</li>
+                  <li>Event coverage and creative music promotional shoots.</li>
+                  <li>Managing multiple assignments efficiently while delivering impactful imagery.</li>
+                  <li>Strong client communication and understanding of brief requirements.</li>
                 </ul>
               </div>
             </div>
