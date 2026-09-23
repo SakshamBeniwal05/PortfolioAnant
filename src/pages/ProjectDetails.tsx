@@ -131,7 +131,6 @@ const ProjectDetails: React.FC = () => {
           </div>
           <div className="flex flex-col items-start md:items-end font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver gap-1">
             <span className="uppercase text-portfolio-primary font-bold tracking-widest">{project.category}</span>
-            <span>Archive © {project.year}</span>
           </div>
         </div>
 

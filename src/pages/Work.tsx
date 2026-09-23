@@ -7,7 +7,6 @@ export interface Project {
   category: 'Portraits' | 'Commercial' | 'Events';
   subtext: string;
   image: string;
-  year: string;
   layoutClass: string;
   aspectClass: string;
   tags: string[];
@@ -20,7 +19,6 @@ export const projectsData: Project[] = [
     category: 'Commercial',
     subtext: '01 — Boisterous',
     image: '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (11).jpeg',
-    year: '2023',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
     tags: ['Live Event', 'Commercial'],
@@ -31,7 +29,6 @@ export const projectsData: Project[] = [
     category: 'Events',
     subtext: '02 — Love Unscripted',
     image: '/images/Weeding/_GEN2053.JPG',
-    year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
     tags: ['Portrait', 'Studio'],
@@ -41,8 +38,7 @@ export const projectsData: Project[] = [
     title: 'Lanscapes',
     category: 'Portraits',
     subtext: '03 — Nature and Horizons',
-    image: '/images/Data/anuvjain_color.jpg',
-    year: '2024',
+    image: '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.46 (1).jpeg',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
     tags: ['Editorial', 'Commercial'],
@@ -54,7 +50,6 @@ export const projectsData: Project[] = [
     subtext: '04 — Events / Studio',
     image:
       '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
-    year: '2024',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
     tags: ['Events', 'Studio'],
@@ -136,9 +131,6 @@ const Work: React.FC = () => {
                   {project.title}
                 </h2>
               </div>
-              <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver mt-1">
-                {project.year}
-              </span>
             </div>
           </Link>
         ))}

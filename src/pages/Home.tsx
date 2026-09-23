@@ -87,14 +87,14 @@ const Home: React.FC = () => {
                     <h3 className="font-portfolio-headline-md text-[20px] md:text-[24px] text-portfolio-primary hover:opacity-80 transition-opacity">
                       {project.title}
                     </h3>
-                    <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver">{project.year}</span>
+                    
                   </div>
                   <div className="parallax-wrap w-full aspect-[4/3] bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite overflow-hidden">
                     <img
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover parallax-img transition-all duration-700 ease-in-out transform group-hover:scale-105"
-                    />
+                    />  
                   </div>
                   <div className="flex gap-2">
                     {project.tags.map((tag) => (
