@@ -30,13 +30,10 @@ const projectImages: Record<string, string[]> = {
     '/images/Weeding/_GEN2053.JPG',
   ],
   '3': [
-    '/images/Weeding/IMG_1418.JPG',
-    '/images/Weeding/IMG_1421.JPG',
-    '/images/Weeding/_GEN2038.JPG',
-    '/images/Weeding/_GEN2047.JPG',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (11).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (12).jpeg',
+    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.46 (1).jpeg',
+    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.46.jpeg',
+    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.47 (1).jpeg',
+    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.47.jpeg',
   ],
   '4': [
     '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.30 (4).jpeg',
