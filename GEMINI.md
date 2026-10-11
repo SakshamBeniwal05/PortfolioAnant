@@ -20,12 +20,12 @@ Add these states and hooks back inside the `Layout` component function body, bef
   // Preload Images and SFX Audio assets
   useEffect(() => {
     const imagesToPreload = [
-      '/images/hero_bg.jpg',
-      '/images/profile.jpg',
-      '/images/Data/stage2.jpeg',
-      '/images/Data/hanumankindcolor.png',
-      '/images/Data/anuvjain_color.jpg',
-      '/images/Data/perforer.jpeg',
+      '/images/hero_bg.webp',
+      '/images/profile.webp',
+      '/images/Data/stage2.webp',
+      '/images/Data/hanumankindcolor.webp',
+      '/images/Data/anuvjain_color.webp',
+      '/images/Data/perforer.webp',
     ];
 
     const audioToPreload = [

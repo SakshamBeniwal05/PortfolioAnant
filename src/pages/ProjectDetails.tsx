@@ -5,45 +5,45 @@ import { projectsData } from './Work';
 // Images mapping for each project
 const projectImages: Record<string, string[]> = {
   '1': [
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.30 (4).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (4).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (11).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (12).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (3).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (5).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32.jpeg',
-    '/images/Concert/anuvjain.jpeg',
-    '/images/Concert/anuvjain_color.jpg',
-    '/images/Concert/hanumankind.jpeg',
-    '/images/Concert/perforer.jpeg',
-    '/images/Concert/stage.jpeg',
-    '/images/Concert/stage2.jpeg',
+    '/images/Concert/stageInfo.webp',
+    '/images/Concert/krsna.webp',
+    '/images/Concert/anuvJainProfile.webp',
+    '/images/Concert/hanumanKind2.webp',
+    '/images/Concert/natural.webp',
+    '/images/Concert/stageInfo2.webp',
+    '/images/Concert/stageInfo3.webp',
+    '/images/Concert/performer2.webp',
+    '/images/Concert/anuvjain.webp',
+    '/images/Concert/anuvjain_color.webp',
+    '/images/Concert/hanumankind.webp',
+    '/images/Concert/perforer.webp',
+    '/images/Concert/stage.webp',
+    '/images/Concert/stage2.webp',
   ],
   '2': [
-    '/images/Weeding/IMG_1225.JPG',
-    '/images/Weeding/IMG_1231.JPG',
-    '/images/Weeding/IMG_1418.JPG',
-    '/images/Weeding/IMG_1421.JPG',
-    '/images/Weeding/_GEN2038.JPG',
-    '/images/Weeding/_GEN2047.JPG',
-    '/images/Weeding/_GEN2053.JPG',
+    '/images/Weeding/IMG_1225.webp',
+    '/images/Weeding/IMG_1231.webp',
+    '/images/Weeding/IMG_1418.webp',
+    '/images/Weeding/IMG_1421.webp',
+    '/images/Weeding/_GEN2038.webp',
+    '/images/Weeding/_GEN2047.webp',
+    '/images/Weeding/_GEN2053.webp',
   ],
   '3': [
-    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.46 (1).jpeg',
-    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.46.jpeg',
-    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.47 (1).jpeg',
-    '/images/Landscape/WhatsApp Image 2026-09-11 at 00.59.47.jpeg',
+    '/images/Landscape/landscape1.webp',
+    '/images/Landscape/landscape2.webp',
+    '/images/Landscape/landscape3.webp',
+    '/images/Landscape/landscape4.webp',
   ],
   '4': [
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.30 (4).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (4).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (3).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (5).jpeg',
-    '/images/Concert/anuvjain.jpeg',
-    '/images/Concert/hanumankindcolor.png',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.31 (3).jpeg',
-    '/images/Concert/WhatsApp Image 2026-08-06 at 23.11.32 (12).jpeg'
+    '/images/Concert/stageInfo.webp',
+    '/images/Concert/anuvJainProfile.webp',
+    '/images/Concert/stageInfo2.webp',
+    '/images/Concert/stageInfo3.webp',
+    '/images/Concert/anuvjain.webp',
+    '/images/Concert/hanumankindcolor.webp',
+    '/images/Concert/krsna.webp',
+    '/images/Concert/natural.webp'
   ],
 };
 
@@ -138,9 +138,9 @@ const ProjectDetails: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-portfolio-section-gap gap-x-portfolio-gutter items-stretch">
           {images.map((imgSrc, idx) => {
             let config = gridConfigs[idx % gridConfigs.length];
-            if (imgSrc.includes('IMG_1418.JPG') || imgSrc.includes('IMG_1421.JPG')) {
+            if (imgSrc.includes('IMG_1418.webp') || imgSrc.includes('IMG_1421.webp')) {
               config = { span: 'md:col-span-6', aspect: 'aspect-square' };
-            } else if (imgSrc.includes('_GEN2053.JPG')) {
+            } else if (imgSrc.includes('_GEN2053.webp')) {
               config = { span: 'md:col-span-6', aspect: 'aspect-[3/4]' };
             }
             return (

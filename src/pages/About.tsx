@@ -15,7 +15,7 @@ const About: React.FC = () => {
             <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
             <img
-              src="/images/Profile/profile.png"
+              src="/images/Profile/profile.webp"
               alt="Anant Rana Portrait"
               className="w-full h-auto object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-105"
             />

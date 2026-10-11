@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         <div className="absolute inset-0 z-0 bg-portfolio-deep-obsidian">
           <div
             className="w-full h-full bg-cover bg-center opacity-70 transition-all duration-1000 ease-in-out transform scale-100 hover:scale-105"
-            style={{ backgroundImage: "url('/images/Profile/profile.png')" }}
+            style={{ backgroundImage: "url('/images/Profile/profile.webp')" }}
           />
         </div>
         
