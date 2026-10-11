@@ -156,7 +156,7 @@ const ProjectDetails: React.FC = () => {
                 <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
                 <div className={`w-full h-full overflow-hidden ${config.aspect}`}>
-                  <img
+                  <img loading='lazy'
                     src={imgSrc}
                     alt={`${project.title} - Visual Frame ${idx + 1}`}
                     className="w-full h-full object-cover transition-all duration-1000 ease-in-out transform group-hover:scale-105"

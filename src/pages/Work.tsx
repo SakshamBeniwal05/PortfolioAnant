@@ -116,7 +116,7 @@ const Work: React.FC = () => {
             <div className="absolute bottom-0 right-0 translate-x-[50%] translate-y-[50%] text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
             <div className={`parallax-wrap w-full bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite overflow-hidden ${project.aspectClass}`}>
-              <img
+              <img loading='lazy'
                 src={project.image}
                 alt={project.title}
                 className="w-full h-full object-cover parallax-img transition-all duration-700 ease-in-out transform group-hover:scale-105"

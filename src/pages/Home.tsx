@@ -90,7 +90,7 @@ const Home: React.FC = () => {
                     
                   </div>
                   <div className="parallax-wrap w-full aspect-[4/3] bg-portfolio-surface-container-low mb-portfolio-stack-md border border-portfolio-soft-graphite overflow-hidden">
-                    <img
+                    <img loading='lazy'
                       src={project.image}
                       alt={project.title}
                       className="w-full h-full object-cover parallax-img transition-all duration-700 ease-in-out transform group-hover:scale-105"
