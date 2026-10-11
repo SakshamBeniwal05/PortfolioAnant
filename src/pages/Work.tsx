@@ -25,10 +25,10 @@ export const projectsData: Project[] = [
   },
   {
     id: '2',
-    title: 'Weeding',
+    title: 'Wedding',
     category: 'Events',
     subtext: '02 — Love Unscripted',
-    image: '/images/Weeding/_GEN2053.webp',
+    image: '/images/Wedding/_GEN2053.webp',
     layoutClass: 'md:col-span-6',
     aspectClass: 'aspect-[4/3] w-full',
     tags: ['Portrait', 'Studio'],
