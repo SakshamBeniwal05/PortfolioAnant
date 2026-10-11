@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                 href="mailto:anantrana112@gmail.com"
                 className="font-portfolio-headline-md text-[20px] md:text-[24px] text-portfolio-primary hover:text-portfolio-muted-silver transition-colors underline decoration-1 underline-offset-4"
               >
-                anantrana112@gmail.com
+                anantrana1213@gmail.com
               </a>
             </div>
 
