@@ -34,7 +34,7 @@ const About: React.FC = () => {
               </h1>
               <div className="font-portfolio-body-lg text-portfolio-body-lg text-portfolio-muted-silver space-y-4 max-w-prose">
                 <p>
-                  Creative and detail-oriented Photographer with over a year of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
+                  Creative and detail-oriented Photographer with over 3+ year of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
                 </p>
                 <p>
                   Skilled in camera handling, lighting techniques, and photo editing software. Passionate about storytelling through visuals and committed to delivering exceptional results that meet client expectations.
@@ -114,13 +114,13 @@ const About: React.FC = () => {
                 Experience
               </span>
               <h3 className="font-portfolio-headline-md text-[24px] md:text-portfolio-headline-md text-portfolio-primary mb-2">
-                Pydome Media
+                Nikita Photo Studio
               </h3>
               <p className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver">
                 Freelance Photographer
               </p>
               <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-surface-tint mt-2">
-                MARCH 2025 - Present
+                MARCH 2022 - Present
               </p>
               
               <div className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver mt-6 space-y-4 leading-relaxed border-t border-portfolio-soft-graphite pt-6">
