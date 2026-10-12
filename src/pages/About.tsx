@@ -34,14 +34,14 @@ const About: React.FC = () => {
               </h1>
               <div className="font-portfolio-body-lg text-portfolio-body-lg text-portfolio-muted-silver space-y-4 max-w-prose">
                 <p>
-                  Creative and detail-oriented Photographer with over 3+ year of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
+                  Creative and detail-oriented Photographer with over 3+ years of experience capturing high-quality images across various styles, including portraits, events, and commercial shoots.
                 </p>
                 <p>
                   Skilled in camera handling, lighting techniques, and photo editing software. Passionate about storytelling through visuals and committed to delivering exceptional results that meet client expectations.
                 </p>
               </div>
             </div>
-            
+
             <div className="border-t border-portfolio-soft-graphite pt-6 mt-6 font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver flex justify-between uppercase">
               <span>Photography Portfolio</span>
               <span>IST (India)</span>
@@ -58,10 +58,10 @@ const About: React.FC = () => {
             {/* Corner crosses */}
             <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
             <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-            <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-            <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+            <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-10 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+            <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-10 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
-            <div>
+            {/* <div>
               <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase block mb-6 tracking-widest border-b border-portfolio-soft-graphite pb-2">
                 Education
               </span>
@@ -74,12 +74,15 @@ const About: React.FC = () => {
               <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-surface-tint mt-2">
                 2022 - 2025
               </p>
-            </div>
-            
-            <div className="border-t border-portfolio-soft-graphite pt-6">
-              <h4 className="font-portfolio-headline-md text-[20px] text-portfolio-primary mb-2">
+            </div> */}
+
+            <div>
+              <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase block mb-6 tracking-widest border-b border-portfolio-soft-graphite pb-2">
+                Education
+              </span>
+              <h3 className="font-portfolio-headline-md text-[24px] md:text-portfolio-headline-md text-portfolio-primary mb-2">
                 Senior Secondary (Class XII)
-              </h4>
+              </h3>
               <p className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver">
                 CBSE Board
               </p>
@@ -106,8 +109,8 @@ const About: React.FC = () => {
             {/* Corner crosses */}
             <div className="absolute top-0 left-0 -translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
             <div className="absolute top-0 right-0 translate-x-1/2 -translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-            <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
-            <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+            <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-10 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
+            <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-10 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[12px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
             <div>
               <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-muted-silver uppercase block mb-6 tracking-widest border-b border-portfolio-soft-graphite pb-2">
@@ -120,9 +123,9 @@ const About: React.FC = () => {
                 Freelance Photographer
               </p>
               <p className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-surface-tint mt-2">
-                MARCH 2022 - Present
+                2022 - Present
               </p>
-              
+
               <div className="font-portfolio-body-md text-portfolio-body-md text-portfolio-muted-silver mt-6 space-y-4 leading-relaxed border-t border-portfolio-soft-graphite pt-6">
                 <p className="font-bold text-portfolio-primary uppercase text-[14px] tracking-wider mb-2">Key Competencies:</p>
                 <ul className="list-disc pl-5 space-y-2">
@@ -194,7 +197,7 @@ const About: React.FC = () => {
               <div className="absolute bottom-0 left-0 -translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
               <div className="absolute bottom-0 right-0 translate-x-1/2 translate-y-1/2 w-4 h-4 flex items-center justify-center leading-none text-portfolio-muted-silver text-[10px] font-portfolio-label-mono select-none pointer-events-none">+</div>
 
-              <div className="flex flex-col gap-10"> 
+              <div className="flex flex-col gap-10">
                 <span className="font-portfolio-label-mono text-portfolio-label-mono text-portfolio-surface-tint uppercase group-hover:text-portfolio-primary transition-colors tracking-widest">
                   Lenses (Glass)
                 </span>
